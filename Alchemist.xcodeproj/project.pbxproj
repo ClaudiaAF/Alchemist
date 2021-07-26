@@ -49,6 +49,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A31349C726AF44E000CA6768 /* ListItemsHome */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ListItemsHome;
+			sourceTree = "<group>";
+		};
 		A34EB99D26A58E3800242E65 = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +98,7 @@
 		A392FE8826ADEE6A0090B544 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A31349C726AF44E000CA6768 /* ListItemsHome */,
 				A392FE9526AEB2190090B544 /* Onboarding */,
 				A392FE8B26ADEEB70090B544 /* SplashPage.swift */,
 				A392FE8D26ADEF3D0090B544 /* NavBarView.swift */,

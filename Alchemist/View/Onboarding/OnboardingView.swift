@@ -9,6 +9,9 @@ import SwiftUI
 
 struct OnboardingView: View {
     var body: some View {
+        ZStack{
+            Color("offBlack")
+                .ignoresSafeArea(.all)
         TabView{
             OnboardingCardView(image: "LogoTransp", title: "Welcome to Alchemist", description: "The Go-To Skyrim Alchemy Library App")
             
@@ -18,6 +21,7 @@ struct OnboardingView: View {
         }
         .tabViewStyle(PageTabViewStyle())
         .padding()
+        }
     }
 }
 
