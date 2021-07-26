@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A31349C226AEC96B00CA6768 /* OnboardingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349C126AEC96B00CA6768 /* OnboardingCardView.swift */; };
+		A31349C426AECD8200CA6768 /* StartButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349C326AECD8200CA6768 /* StartButtonView.swift */; };
+		A31349C626AEDBBD00CA6768 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349C526AEDBBD00CA6768 /* OnboardingView.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
@@ -14,9 +17,14 @@
 		A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8B26ADEEB70090B544 /* SplashPage.swift */; };
 		A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8D26ADEF3D0090B544 /* NavBarView.swift */; };
 		A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8F26ADF4A10090B544 /* LogoView.swift */; };
+		A392FE9226ADFCA40090B544 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE9126ADFCA40090B544 /* Constants.swift */; };
+		A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE9326AE00240090B544 /* CategoryItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A31349C126AEC96B00CA6768 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
+		A31349C326AECD8200CA6768 /* StartButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartButtonView.swift; sourceTree = "<group>"; };
+		A31349C526AEDBBD00CA6768 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,6 +34,8 @@
 		A392FE8B26ADEEB70090B544 /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 		A392FE8D26ADEF3D0090B544 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		A392FE8F26ADF4A10090B544 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
+		A392FE9126ADFCA40090B544 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A392FE9326AE00240090B544 /* CategoryItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,9 +91,11 @@
 		A392FE8826ADEE6A0090B544 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A392FE9526AEB2190090B544 /* Onboarding */,
 				A392FE8B26ADEEB70090B544 /* SplashPage.swift */,
 				A392FE8D26ADEF3D0090B544 /* NavBarView.swift */,
 				A392FE8F26ADF4A10090B544 /* LogoView.swift */,
+				A392FE9326AE00240090B544 /* CategoryItemView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -91,6 +103,7 @@
 		A392FE8926ADEE740090B544 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A392FE9126ADFCA40090B544 /* Constants.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -100,6 +113,16 @@
 			children = (
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		A392FE9526AEB2190090B544 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A31349C126AEC96B00CA6768 /* OnboardingCardView.swift */,
+				A31349C326AECD8200CA6768 /* StartButtonView.swift */,
+				A31349C526AEDBBD00CA6768 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,11 +194,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A31349C426AECD8200CA6768 /* StartButtonView.swift in Sources */,
 				A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */,
 				A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */,
+				A31349C626AEDBBD00CA6768 /* OnboardingView.swift in Sources */,
 				A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */,
+				A31349C226AEC96B00CA6768 /* OnboardingCardView.swift in Sources */,
+				A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */,
 				A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */,
 				A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */,
+				A392FE9226ADFCA40090B544 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
