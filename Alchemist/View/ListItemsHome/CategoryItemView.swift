@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct CategoryItemView: View {
+        
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Rectangle()
+            .frame(width: 250, height: 400)
+            .cornerRadius(30)
+            .foregroundColor(.gray)
     }
 }
 
@@ -17,7 +21,5 @@ struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryItemView()
             .previewLayout(.sizeThatFits)
-            .padding()
-            .background(Color("offblack"))
     }
 }

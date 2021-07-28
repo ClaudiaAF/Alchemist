@@ -21,6 +21,28 @@ struct ContentView: View {
             
             Spacer()
         }
+            VStack(alignment: .leading){
+                HStack{
+                    Text("Alchemy Recipes")
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .font(.system(size: 30))
+                }.frame(height:60, alignment: .leading)
+                .padding(.leading, 36)
+                
+                SearchBar()
+                    .padding()
+                
+                HStack{
+                    Text("Health")
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .font(.system(size: 22))
+                } .padding(.top)
+                .padding(.leading, 36)
+                
+                
+            }
     } .ignoresSafeArea(.all)
 }
 }
