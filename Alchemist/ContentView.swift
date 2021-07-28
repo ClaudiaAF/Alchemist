@@ -31,7 +31,6 @@ struct ContentView: View {
                 .padding(.leading, 36)
                 
                 SearchBar()
-                    .padding()
                 
                 HStack{
                     Text("Health")
@@ -40,6 +39,20 @@ struct ContentView: View {
                         .font(.system(size: 22))
                 } .padding(.top)
                 .padding(.leading, 36)
+                .padding(.bottom)
+                
+                HealthGridView()
+                    .frame(height:200)
+                    .padding(.bottom)
+                
+                HStack{
+                    Text("Restoration")
+                        .foregroundColor(.white)
+                        .fontWeight(.black)
+                        .font(.system(size: 22))
+                } .padding(.top)
+                .padding(.leading, 36)
+                .padding(.bottom)
                 
                 HealthGridView()
                     .frame(height:200)

@@ -8,21 +8,21 @@
 import SwiftUI
 
 struct HealthGridView: View {
+    var potion: [PotionsModel] = PotionsData
+    
     var body: some View {
         VStack{
-            Divider()
             ScrollView(.horizontal){
                 HStack(spacing: 10){
-                    ForEach(0..<10) { index in
-                        CategoryItemView(label: "\(index)")
+                        ForEach(potion){ item in
+                            CategoryItemView(potions: item)
+                                .padding()
+                        }
                     }
                 }.padding()
             }.frame(height: 210)
-            Divider()
-            Spacer()
         }
     }
-}
 
 struct HealthGridView_Previews: PreviewProvider {
     static var previews: some View {
