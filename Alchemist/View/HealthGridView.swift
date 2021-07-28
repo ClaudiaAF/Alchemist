@@ -9,12 +9,24 @@ import SwiftUI
 
 struct HealthGridView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Divider()
+            ScrollView(.horizontal){
+                HStack(spacing: 10){
+                    ForEach(0..<10) { index in
+                        CategoryItemView(label: "\(index)")
+                    }
+                }.padding()
+            }.frame(height: 210)
+            Divider()
+            Spacer()
+        }
     }
 }
 
 struct HealthGridView_Previews: PreviewProvider {
     static var previews: some View {
         HealthGridView()
+            .previewLayout(.sizeThatFits)
     }
 }

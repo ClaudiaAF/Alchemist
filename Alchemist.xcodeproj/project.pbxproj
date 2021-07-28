@@ -12,6 +12,8 @@
 		A31349C626AEDBBD00CA6768 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349C526AEDBBD00CA6768 /* OnboardingView.swift */; };
 		A31349DF26B1643100CA6768 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349DE26B1643100CA6768 /* SearchBar.swift */; };
 		A31349E126B1723A00CA6768 /* HealthGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E026B1723A00CA6768 /* HealthGridView.swift */; };
+		A31349E426B1C71800CA6768 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E326B1C71800CA6768 /* PotionsModel.swift */; };
+		A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E526B1C7CE00CA6768 /* PotionsData.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
@@ -29,6 +31,8 @@
 		A31349C526AEDBBD00CA6768 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A31349DE26B1643100CA6768 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		A31349E026B1723A00CA6768 /* HealthGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGridView.swift; sourceTree = "<group>"; };
+		A31349E326B1C71800CA6768 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
+		A31349E526B1C7CE00CA6768 /* PotionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsData.swift; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -61,6 +65,14 @@
 			path = ListItemsHome;
 			sourceTree = "<group>";
 		};
+		A31349E226B1AA0600CA6768 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				A31349E526B1C7CE00CA6768 /* PotionsData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		A34EB99D26A58E3800242E65 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +92,7 @@
 		A34EB9A826A58E3900242E65 /* Alchemist */ = {
 			isa = PBXGroup;
 			children = (
+				A31349E226B1AA0600CA6768 /* Data */,
 				A392FE8A26ADEE800090B544 /* App */,
 				A392FE8926ADEE740090B544 /* Model */,
 				A392FE8826ADEE6A0090B544 /* View */,
@@ -118,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				A392FE9126ADFCA40090B544 /* Constants.swift */,
+				A31349E326B1C71800CA6768 /* PotionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -212,10 +226,12 @@
 				A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */,
 				A31349DF26B1643100CA6768 /* SearchBar.swift in Sources */,
 				A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */,
+				A31349E426B1C71800CA6768 /* PotionsModel.swift in Sources */,
 				A31349C626AEDBBD00CA6768 /* OnboardingView.swift in Sources */,
 				A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */,
 				A31349E126B1723A00CA6768 /* HealthGridView.swift in Sources */,
 				A31349C226AEC96B00CA6768 /* OnboardingCardView.swift in Sources */,
+				A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */,
 				A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */,
 				A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */,
 				A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */,

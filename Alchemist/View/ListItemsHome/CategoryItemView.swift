@@ -8,18 +8,22 @@
 import SwiftUI
 
 struct CategoryItemView: View {
+    @State var label: String
         
     var body: some View {
-        Rectangle()
-            .frame(width: 250, height: 400)
-            .cornerRadius(30)
-            .foregroundColor(.gray)
+        ZStack{
+            Rectangle()
+                .frame(width: 150, height: 200)
+                .cornerRadius(30)
+                .foregroundColor(.gray)
+            Text(label)
+        }
     }
 }
 
 struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryItemView()
+        CategoryItemView(label: String)
             .previewLayout(.sizeThatFits)
     }
 }

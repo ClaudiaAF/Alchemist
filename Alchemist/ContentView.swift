@@ -41,6 +41,9 @@ struct ContentView: View {
                 } .padding(.top)
                 .padding(.leading, 36)
                 
+                HealthGridView()
+                    .frame(height:200)
+                
                 
             }
     } .ignoresSafeArea(.all)
