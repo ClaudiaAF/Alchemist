@@ -29,6 +29,7 @@ struct ContentView: View {
                         .font(.system(size: 30))
                 }.frame(height:60, alignment: .leading)
                 .padding(.leading, 36)
+                .padding(.top, 50)
                 
                 SearchBar()
                 

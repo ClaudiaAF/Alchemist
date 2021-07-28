@@ -14,6 +14,7 @@
 		A31349E126B1723A00CA6768 /* HealthGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E026B1723A00CA6768 /* HealthGridView.swift */; };
 		A31349E426B1C71800CA6768 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E326B1C71800CA6768 /* PotionsModel.swift */; };
 		A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E526B1C7CE00CA6768 /* PotionsData.swift */; };
+		A31349EA26B1D51800CA6768 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E926B1D51800CA6768 /* SettingsPage.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		A31349E026B1723A00CA6768 /* HealthGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthGridView.swift; sourceTree = "<group>"; };
 		A31349E326B1C71800CA6768 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
 		A31349E526B1C7CE00CA6768 /* PotionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsData.swift; sourceTree = "<group>"; };
+		A31349E926B1D51800CA6768 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,21 @@
 				A31349E526B1C7CE00CA6768 /* PotionsData.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		A31349E726B1D4DF00CA6768 /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				A31349E926B1D51800CA6768 /* SettingsPage.swift */,
+			);
+			path = SettingsView;
+			sourceTree = "<group>";
+		};
+		A31349E826B1D4EB00CA6768 /* IndividualItems */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = IndividualItems;
 			sourceTree = "<group>";
 		};
 		A34EB99D26A58E3800242E65 = {
@@ -116,6 +133,8 @@
 		A392FE8826ADEE6A0090B544 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A31349E826B1D4EB00CA6768 /* IndividualItems */,
+				A31349E726B1D4DF00CA6768 /* SettingsView */,
 				A31349C726AF44E000CA6768 /* ListItemsHome */,
 				A392FE9526AEB2190090B544 /* Onboarding */,
 				A392FE8B26ADEEB70090B544 /* SplashPage.swift */,
@@ -231,6 +250,7 @@
 				A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */,
 				A31349E126B1723A00CA6768 /* HealthGridView.swift in Sources */,
 				A31349C226AEC96B00CA6768 /* OnboardingCardView.swift in Sources */,
+				A31349EA26B1D51800CA6768 /* SettingsPage.swift in Sources */,
 				A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */,
 				A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */,
 				A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */,
