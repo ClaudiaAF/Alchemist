@@ -1,3 +1,4 @@
+
 <!--
 
 ***
@@ -29,13 +30,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo_name">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">    
+    <img src="https://user-images.githubusercontent.com/64257497/127384307-ea6806ef-c62f-438e-a22f-dd6368d6bc98.png" alt="Logo" width="180" height="180">    
   </a>
 
   <h3 align="center">Alchemist</h3>
 
   <p align="center">
-    Covid-19 Screening
+    Your Go-To Skyrim Alchemy Library App.
     <br />
     <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
     <br />
