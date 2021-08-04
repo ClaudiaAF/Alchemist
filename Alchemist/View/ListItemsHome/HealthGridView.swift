@@ -9,6 +9,7 @@ import SwiftUI
 
 struct HealthGridView: View {
     var potion: [PotionsModel] = PotionsData
+    @EnvironmentObject var dungeon: Dungeon
     
     var body: some View {
         VStack{
@@ -16,6 +17,12 @@ struct HealthGridView: View {
                 HStack(spacing: 10){
                         ForEach(potion){ item in
                             CategoryItemView(potions: item)
+                                .onTapGesture {
+                                    withAnimation(.easeOut) {
+                                        dungeon.selectedPotion = item
+                                        dungeon.showingPotion = true
+                                    }
+                                }
                                 .padding()
                         }
                     }
