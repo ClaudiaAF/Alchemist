@@ -13,5 +13,5 @@ struct PotionsModel: Identifiable {
     var name: String
     var description: String
     var image: String
-    var points: [Int]
+    var points: String
 }

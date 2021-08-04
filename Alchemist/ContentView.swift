@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @EnvironmentObject var dungeon: Dungeon
+    
     var body: some View {
         ZStack{
             Color("offBlack")
@@ -21,7 +24,10 @@ struct ContentView: View {
             
             Spacer()
         }
-            VStack(alignment: .leading){
+        
+            if dungeon.showingPotion == false && dungeon.selectedPotion == nil {
+                
+                VStack(alignment: .leading){
                 HStack{
                     Text("Alchemy Recipes")
                         .foregroundColor(.white)
@@ -42,7 +48,7 @@ struct ContentView: View {
                 .padding(.leading, 36)
                 .padding(.bottom)
                 
-                HealthGridView()
+                HealthGridView()                    
                     .frame(height:200)
                     .padding(.bottom)
                 
@@ -59,6 +65,9 @@ struct ContentView: View {
                     .frame(height:200)
                 
                 
+                }
+            } else {
+                ItemView()
             }
     } .ignoresSafeArea(.all)
 }
@@ -67,5 +76,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Dungeon())
     }
 }

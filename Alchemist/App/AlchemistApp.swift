@@ -18,6 +18,7 @@ struct AlchemistApp: App {
                 OnboardingView()
             } else {
                 ContentView()
+                    .environmentObject(Dungeon())
             }
         }
     }
