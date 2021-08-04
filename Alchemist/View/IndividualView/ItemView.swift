@@ -8,79 +8,61 @@
 import SwiftUI
 
 struct ItemView: View {
+    
+    @EnvironmentObject var dungeon: Dungeon
+    
     var body: some View {
-        ZStack{
-            Color("offBlack")
-                .ignoresSafeArea(.all)
-            VStack{
-                HStack{
-                    Image(systemName: "arrow.left")
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding()
-                    Text("Back")
-                        .foregroundColor(.white)
-                        .font(.system(size: 23))
-                    Spacer()
-                        
-                }
+        VStack(alignment: .leading, spacing: 5, content: {
+            //navbar
+            
+            NavBarDetailView()
+                .padding(.horizontal)
+                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
+            //header
+            HeaderDetail()
+                .padding(.horizontal)
+            
+            //detail top section
+            TopSectionDetail()
+                .padding()
+                .zIndex(1)
+            
+            
+            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
+                //description
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    Text(dungeon.selectedPotion?.description ?? sampleProduct.description)
+                        .font(.system(.body, design: .rounded))
+                        .foregroundColor(.gray)
+                        .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+                })
                 
-                HStack{
-                    Image(systemName: "photo")
-                        .foregroundColor(.white)
-                        .font(.system(size: 150))
-                        .padding()
-                }
-                
-                HStack{
-                    Text("Restore Health Potion")
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding(30)
-                    Spacer()
-                }
-                
-                HStack{
-                    Text("Regain a certain amount of HP when ingesting")
-                        .fontWeight(.regular)
-                        .foregroundColor(.white)
-                        .font(.system(size: 20))
-                        .padding(30)
-                    Spacer()
-                }
-                
-                HStack{
-                    Text("Ingredients")
-                        .fontWeight(.black)
-                        .foregroundColor(.white)
-                        .font(.system(size: 30))
-                        .padding(20)
-                    Spacer()
-                }
-                
-                Rectangle()
-                    .frame(width: 350, height: 50)
-                    .foregroundColor(Color("lightGrey"))
-                    .cornerRadius(10)
-                
-                Rectangle()
-                    .frame(width: 350, height: 50)
-                    .foregroundColor(Color("lightGrey"))
-                    .cornerRadius(10)
-                    .padding()
-                
-                Rectangle()
-                    .frame(width: 350, height: 50)
-                    .foregroundColor(Color("lightGrey"))
-                    .cornerRadius(10)
-            }
+                Spacer()
+            })
+            .frame(width: 375)
+            .padding(.horizontal)
+            .background(
+                Image("Glass")
+                    .resizable()
+                    .clipShape(RoundedRectangle())
+                    .padding(.top, -105)
+            )
+          
+        })
+        .background(
+            Image("Bubbles")
+                .resizable()
+        )
+        .zIndex(0)
+        .ignoresSafeArea(.all)
+        
         }
-    }
 }
 
 struct ItemView_Previews: PreviewProvider {
     static var previews: some View {
         ItemView()
+            .previewLayout(.fixed(width: 405, height: 812))
+            .environmentObject(Dungeon())
     }
 }

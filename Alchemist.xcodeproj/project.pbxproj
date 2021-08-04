@@ -16,11 +16,15 @@
 		A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E526B1C7CE00CA6768 /* PotionsData.swift */; };
 		A31349EA26B1D51800CA6768 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349E926B1D51800CA6768 /* SettingsPage.swift */; };
 		A31349ED26B1E98E00CA6768 /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349EC26B1E98E00CA6768 /* ItemView.swift */; };
+		A31349F326B9DB0900CA6768 /* NavBarDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349F226B9DB0900CA6768 /* NavBarDetailView.swift */; };
+		A31349F526BA9A9500CA6768 /* HeaderDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349F426BA9A9500CA6768 /* HeaderDetail.swift */; };
+		A31349F726BA9C0B00CA6768 /* TopSectionDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349F626BA9C0B00CA6768 /* TopSectionDetail.swift */; };
+		A31349F926BAA73F00CA6768 /* RoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349F826BAA73F00CA6768 /* RoundedRectangle.swift */; };
+		A31349FC26BAB97C00CA6768 /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349FB26BAB97C00CA6768 /* Dungeon.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
 		A34EB9B126A58E3E00242E65 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9B026A58E3E00242E65 /* Preview Assets.xcassets */; };
-		A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8B26ADEEB70090B544 /* SplashPage.swift */; };
 		A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8D26ADEF3D0090B544 /* NavBarView.swift */; };
 		A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE8F26ADF4A10090B544 /* LogoView.swift */; };
 		A392FE9226ADFCA40090B544 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE9126ADFCA40090B544 /* Constants.swift */; };
@@ -37,13 +41,17 @@
 		A31349E526B1C7CE00CA6768 /* PotionsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsData.swift; sourceTree = "<group>"; };
 		A31349E926B1D51800CA6768 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
 		A31349EC26B1E98E00CA6768 /* ItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
+		A31349F226B9DB0900CA6768 /* NavBarDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarDetailView.swift; sourceTree = "<group>"; };
+		A31349F426BA9A9500CA6768 /* HeaderDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderDetail.swift; sourceTree = "<group>"; };
+		A31349F626BA9C0B00CA6768 /* TopSectionDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopSectionDetail.swift; sourceTree = "<group>"; };
+		A31349F826BAA73F00CA6768 /* RoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangle.swift; sourceTree = "<group>"; };
+		A31349FB26BAB97C00CA6768 /* Dungeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A34EB9AD26A58E3E00242E65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34EB9B026A58E3E00242E65 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A34EB9B226A58E3E00242E65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A392FE8B26ADEEB70090B544 /* SplashPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashPage.swift; sourceTree = "<group>"; };
 		A392FE8D26ADEF3D0090B544 /* NavBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavBarView.swift; sourceTree = "<group>"; };
 		A392FE8F26ADF4A10090B544 /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		A392FE9126ADFCA40090B544 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -64,6 +72,7 @@
 		A31349C726AF44E000CA6768 /* ListItemsHome */ = {
 			isa = PBXGroup;
 			children = (
+				A31349E026B1723A00CA6768 /* HealthGridView.swift */,
 				A392FE9326AE00240090B544 /* CategoryItemView.swift */,
 			);
 			path = ListItemsHome;
@@ -85,19 +94,41 @@
 			path = SettingsView;
 			sourceTree = "<group>";
 		};
-		A31349E826B1D4EB00CA6768 /* IndividualItems */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IndividualItems;
-			sourceTree = "<group>";
-		};
 		A31349EB26B1E97200CA6768 /* IndividualView */ = {
 			isa = PBXGroup;
 			children = (
 				A31349EC26B1E98E00CA6768 /* ItemView.swift */,
+				A31349F426BA9A9500CA6768 /* HeaderDetail.swift */,
+				A31349F626BA9C0B00CA6768 /* TopSectionDetail.swift */,
+				A31349F826BAA73F00CA6768 /* RoundedRectangle.swift */,
 			);
 			path = IndividualView;
+			sourceTree = "<group>";
+		};
+		A31349FA26BAB93700CA6768 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				A31349FB26BAB97C00CA6768 /* Dungeon.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		A31349FD26BAC9D400CA6768 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A392FE8F26ADF4A10090B544 /* LogoView.swift */,
+				A392FE8D26ADEF3D0090B544 /* NavBarView.swift */,
+				A31349F226B9DB0900CA6768 /* NavBarDetailView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		A31349FE26BACA8100CA6768 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				A31349DE26B1643100CA6768 /* SearchBar.swift */,
+			);
+			path = Search;
 			sourceTree = "<group>";
 		};
 		A34EB99D26A58E3800242E65 = {
@@ -119,11 +150,11 @@
 		A34EB9A826A58E3900242E65 /* Alchemist */ = {
 			isa = PBXGroup;
 			children = (
+				A31349FA26BAB93700CA6768 /* Utility */,
 				A31349E226B1AA0600CA6768 /* Data */,
 				A392FE8A26ADEE800090B544 /* App */,
 				A392FE8926ADEE740090B544 /* Model */,
 				A392FE8826ADEE6A0090B544 /* View */,
-				A34EB9A926A58E3900242E65 /* AlchemistApp.swift */,
 				A34EB9AB26A58E3900242E65 /* ContentView.swift */,
 				A34EB9AD26A58E3E00242E65 /* Assets.xcassets */,
 				A34EB9B226A58E3E00242E65 /* Info.plist */,
@@ -143,16 +174,12 @@
 		A392FE8826ADEE6A0090B544 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A31349FE26BACA8100CA6768 /* Search */,
+				A31349FD26BAC9D400CA6768 /* Navigation */,
 				A31349EB26B1E97200CA6768 /* IndividualView */,
-				A31349E826B1D4EB00CA6768 /* IndividualItems */,
 				A31349E726B1D4DF00CA6768 /* SettingsView */,
 				A31349C726AF44E000CA6768 /* ListItemsHome */,
 				A392FE9526AEB2190090B544 /* Onboarding */,
-				A392FE8B26ADEEB70090B544 /* SplashPage.swift */,
-				A392FE8D26ADEF3D0090B544 /* NavBarView.swift */,
-				A392FE8F26ADF4A10090B544 /* LogoView.swift */,
-				A31349DE26B1643100CA6768 /* SearchBar.swift */,
-				A31349E026B1723A00CA6768 /* HealthGridView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -169,6 +196,7 @@
 		A392FE8A26ADEE800090B544 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				A34EB9A926A58E3900242E65 /* AlchemistApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -255,18 +283,22 @@
 				A31349C426AECD8200CA6768 /* StartButtonView.swift in Sources */,
 				A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */,
 				A31349DF26B1643100CA6768 /* SearchBar.swift in Sources */,
+				A31349F326B9DB0900CA6768 /* NavBarDetailView.swift in Sources */,
 				A31349ED26B1E98E00CA6768 /* ItemView.swift in Sources */,
 				A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */,
 				A31349E426B1C71800CA6768 /* PotionsModel.swift in Sources */,
 				A31349C626AEDBBD00CA6768 /* OnboardingView.swift in Sources */,
+				A31349F726BA9C0B00CA6768 /* TopSectionDetail.swift in Sources */,
 				A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */,
 				A31349E126B1723A00CA6768 /* HealthGridView.swift in Sources */,
+				A31349F926BAA73F00CA6768 /* RoundedRectangle.swift in Sources */,
 				A31349C226AEC96B00CA6768 /* OnboardingCardView.swift in Sources */,
 				A31349EA26B1D51800CA6768 /* SettingsPage.swift in Sources */,
 				A31349E626B1C7CE00CA6768 /* PotionsData.swift in Sources */,
 				A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */,
-				A392FE8C26ADEEB70090B544 /* SplashPage.swift in Sources */,
+				A31349F526BA9A9500CA6768 /* HeaderDetail.swift in Sources */,
 				A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */,
+				A31349FC26BAB97C00CA6768 /* Dungeon.swift in Sources */,
 				A392FE9226ADFCA40090B544 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
