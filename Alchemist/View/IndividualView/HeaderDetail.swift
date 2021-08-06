@@ -19,7 +19,7 @@ struct HeaderDetail: View {
             Text(dungeon.selectedPotion?.name ?? sampleProduct.name)
                 .font(.largeTitle)
                 .fontWeight(.black)
-                .foregroundColor(.white)
+                .foregroundColor(Color("text"))
         })
             
     }

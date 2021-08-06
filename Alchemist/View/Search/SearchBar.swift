@@ -19,7 +19,7 @@ struct SearchBar: View {
                     Image(systemName: "magnifyingglass")
                     TextField("Search...", text: $searchText)
                 }
-                .foregroundColor(.gray)
+                .foregroundColor(Color("text"))
                 .padding(.leading, 13)
             }
             .frame(height: 40)

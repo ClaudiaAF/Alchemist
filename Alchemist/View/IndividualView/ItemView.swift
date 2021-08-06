@@ -39,8 +39,8 @@ struct ItemView: View {
                 
                 Spacer()
             })
-            .frame(width: 375)
-            .padding(.horizontal)
+            .frame(width: 380)
+            .padding()
             .background(
                 Image("Glass")
                     .resizable()

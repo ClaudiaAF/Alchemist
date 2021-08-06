@@ -22,9 +22,9 @@ struct StartButtonView: View {
             }
             .padding(.horizontal, 16)
             .padding(.vertical, 10)
-            .background(Capsule().strokeBorder(Color.white, lineWidth: 1.25))
+            .background(Capsule().strokeBorder(Color("text"), lineWidth: 1.25))
             .cornerRadius(30)
-            .accentColor(.white)
+            .accentColor(Color("text"))
         })
     }
 }

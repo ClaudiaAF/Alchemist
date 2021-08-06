@@ -30,9 +30,9 @@ struct ContentView: View {
                 VStack(alignment: .leading){
                 HStack{
                     Text("Alchemy Recipes")
-                        .foregroundColor(.white)
                         .fontWeight(.black)
                         .font(.system(size: 30))
+                        .foregroundColor(Color("text"))
                 }.frame(height:60, alignment: .leading)
                 .padding(.leading, 36)
                 .padding(.top, 50)
@@ -41,7 +41,7 @@ struct ContentView: View {
                 
                 HStack{
                     Text("Health")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
                         .fontWeight(.black)
                         .font(.system(size: 22))
                 } .padding(.top)
@@ -54,7 +54,7 @@ struct ContentView: View {
                 
                 HStack{
                     Text("Restoration")
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
                         .fontWeight(.black)
                         .font(.system(size: 22))
                 } .padding(.top)

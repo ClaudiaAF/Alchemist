@@ -8,75 +8,84 @@
 import SwiftUI
 
 struct SettingsPage: View {
+    
+    @Environment(\.presentationMode) var presentationMode
+    @AppStorage("isDarkMode") var isDarkMode = false
+    
     var body: some View {
-        ZStack{
-            Color("offBlack")
-            VStack(alignment: .trailing){
-                HStack{
-                    Text("Settings")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                        .fontWeight(.black)
-                        .padding(40)
+            NavigationView{
+                ScrollView(.vertical, showsIndicators: true){
+                    
+                    //about section
+                    GroupBox(label: HStack{
+                        Text("About")
+                        Spacer()
+                        Image(systemName: "info.circle")
+                    }, content: {
+                        Text("This is the nerdiest app ever")
+                            .padding()
+                            .multilineTextAlignment(.leading)
+                    })
+                    .padding()
+                    
                     Spacer()
-                    Image(systemName: "xmark")
-                        .padding(40)
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
+                    
+                    GroupBox(){
+                        DisclosureGroup("Developer Info"){
+                            Divider().padding(.vertical, 2)
+                            
+                            HStack{
+                                Text("Version")
+                                Spacer()
+                                Text("1.0.0")
+                            }
+                            
+                            Divider().padding(.vertical, 2)
+                            
+                            HStack{
+                                Text("Developed by")
+                                Spacer()
+                                Text("Claudia Ferreira")
+                            }
+                        }
+                        
+                        Spacer()
+                        
+                    }.padding()
+                    
+                    //Link
+                    GroupBox(){
+                        HStack{
+                            Text("Source Code")
+                            Spacer()
+                            Link(destination: URL(string: "https://www.apple.com")!, label: {
+                                Text("Github")
+                            })
+                            Image(systemName: "arrow.up.right.square")
+                        }
+                    }.padding()
+                    
+                    //dark and light mode
+                    Picker("Mode", selection: $isDarkMode){
+                        Text("Light")
+                            .tag(false)
+                        Text("Dark")
+                            .tag(true)
+                    }
+                    .pickerStyle(SegmentedPickerStyle()).padding()
+                    
                 }
-                HStack{
-                    Text("Style")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 23))
-                    Spacer()
-                }.padding(.leading, 40)
-                
-                HStack{
-                    Image(systemName: "lightbulb.fill")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                    Text("Light Mode")
-                        .foregroundColor(.white)
-                        .font(.system(size: 22))
-                    Toggle(isOn: .constant(false), label: {
-                        Text("")
-                    })
-                    Spacer()
-                }.padding(30)
-                
-                HStack{
-                    Image(systemName: "character.book.closed")
-                        .font(.system(size: 30))
-                        .foregroundColor(.white)
-                    Text("Minimalist View")
-                        .foregroundColor(.white)
-                        .font(.system(size: 22))
-                    Toggle(isOn: .constant(false), label: {
-                        Text("")
-                    })
-                    Spacer()
-                }.padding(30)
-                
-                HStack{
-                    Text("App Information")
-                        .foregroundColor(.gray)
-                        .font(.system(size: 23))
-                    Spacer()
-                }.padding(.leading, 40)
-                
-                HStack{
-                    Text("Alchemist is library app containing all of the potion and poison recipes that are craftable within The Elder Scrolls V: Skyrim.")
-                        .foregroundColor(.white)
-                        .font(.system(size: 22))
-                        .padding()
-                    Spacer()
-                }.padding(.leading, 30)
-                .padding(.top, 15)
-                
-                Spacer()
+                    .navigationTitle("Settings")
+                    .navigationBarItems(trailing: Button(action: {print("Clicked")
+                        //close settings page
+                        presentationMode.wrappedValue.dismiss()
+                        
+                    }, label: {
+                        Image(systemName: "xmark")
+                            .font(.title)
+                    }))
             }
-            
-        }
+            .preferredColorScheme(isDarkMode ? .dark : .light)
     }
 }
 

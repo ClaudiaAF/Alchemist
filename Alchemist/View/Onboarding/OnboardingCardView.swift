@@ -22,12 +22,12 @@ struct OnboardingCardView: View {
             Text(title)
                 .font(.largeTitle)
                 .fontWeight(.black)
-                .foregroundColor(.white)
+                .foregroundColor(Color("text"))
                 .multilineTextAlignment(.center)
             
             Text(description)
                 .font(.body)
-                .foregroundColor(.white)
+                .foregroundColor(Color("text"))
                 .padding()
                 .frame(maxWidth:480)
             

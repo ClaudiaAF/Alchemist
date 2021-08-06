@@ -18,13 +18,13 @@ struct TopSectionDetail: View {
             VStack(alignment: .leading, spacing: 6, content: {
                 Text("HP")
                     .fontWeight(.semibold)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
                     .padding(.leading, 60)
                 
                 Text(dungeon.selectedPotion?.points ?? sampleProduct.points)
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
                     .scaleEffect(1.35, anchor: .leading)
                     .padding(.leading, 60)
             })

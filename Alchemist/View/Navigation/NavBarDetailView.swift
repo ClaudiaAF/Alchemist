@@ -10,6 +10,7 @@ import SwiftUI
 struct NavBarDetailView: View {
     
     @EnvironmentObject var dungeon: Dungeon
+    @State private var isShowingSettings = false
     
     var body: some View {
         HStack{
@@ -21,14 +22,19 @@ struct NavBarDetailView: View {
             }, label: {
                 Image(systemName: "chevron.left")
                     .font(.title)
-                    .foregroundColor(.white)
+                    .foregroundColor(Color("text"))
             })
             Spacer()
-            Button(action: {}, label: {
-                Image(systemName: "gear")
-                    .font(.title)
-                    .foregroundColor(.white)
-            })
+            Button(action: {
+                isShowingSettings = true
+                }) {
+                    Image(systemName: "gear")
+                        .font(.title)
+                        .foregroundColor(Color("text"))
+                }
+            .sheet(isPresented: $isShowingSettings){
+                SettingsPage()
+            }
         }
     }
 }

@@ -28,14 +28,14 @@ struct CategoryItemView: View {
                     Text(potions.name)
                         .font(.system(size: 12))
                         .fontWeight(.bold)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
                 
                     Text(potions.description)
                         .font(.system(size: 12))
                         .fontWeight(.regular)
                         .frame(width: 120)
                         .padding()
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("text"))
             
             }
         }
