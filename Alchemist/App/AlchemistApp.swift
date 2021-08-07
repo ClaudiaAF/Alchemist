@@ -18,6 +18,7 @@ struct AlchemistApp: App {
             if isOnboarding {
                 OnboardingView()
                     .preferredColorScheme(isDarkMode ? .light : .dark)
+                
             } else {
                 ContentView()
                     .environmentObject(Dungeon())

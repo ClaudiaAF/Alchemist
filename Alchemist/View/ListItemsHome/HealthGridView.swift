@@ -13,8 +13,8 @@ struct HealthGridView: View {
     
     var body: some View {
         VStack{
-            ScrollView(.horizontal){
-                HStack(spacing: 10){
+            ScrollView(.vertical){
+                VStack(spacing: 10){
                         ForEach(potion){ item in
                             CategoryItemView(potions: item)
                                 .onTapGesture {
@@ -27,7 +27,7 @@ struct HealthGridView: View {
                         }
                     }
                 }.padding()
-            }.frame(height: 210)
+            }.frame(height: 710)
         }
     }
 

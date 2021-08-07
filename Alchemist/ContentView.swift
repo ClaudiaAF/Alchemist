@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    
+    var potion: [PotionsModel] = PotionsData
     @EnvironmentObject var dungeon: Dungeon
+    @State private var searchText = ""
     
     var body: some View {
         ZStack{
@@ -37,33 +38,22 @@ struct ContentView: View {
                 .padding(.leading, 36)
                 .padding(.top, 50)
                 
-                SearchBar()
-                
-                HStack{
-                    Text("Health")
-                        .foregroundColor(Color("text"))
-                        .fontWeight(.black)
-                        .font(.system(size: 22))
-                } .padding(.top)
-                .padding(.leading, 36)
-                .padding(.bottom)
-                
-                HealthGridView()                    
-                    .frame(height:200)
-                    .padding(.bottom)
-                
-                HStack{
-                    Text("Restoration")
-                        .foregroundColor(Color("text"))
-                        .fontWeight(.black)
-                        .font(.system(size: 22))
-                } .padding(.top)
-                .padding(.leading, 36)
-                .padding(.bottom)
-                
-                HealthGridView()
-                    .frame(height:200)
-                
+                    SearchBar(text: $searchText)
+                        .padding()
+                    
+                    ScrollView(.vertical){
+                        VStack(spacing: 10){
+                                ForEach(PotionsData.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { item in
+                                    CategoryItemView(potions:item)
+                                        .onTapGesture {
+                                            withAnimation(.easeOut){
+                                                dungeon.selectedPotion = item
+                                                dungeon.showingPotion = true
+                                            }
+                                        }.padding()
+                                }
+                            }
+                        }.padding()
                 
                 }
             } else {

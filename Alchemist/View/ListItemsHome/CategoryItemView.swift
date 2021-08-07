@@ -12,10 +12,10 @@ struct CategoryItemView: View {
         
     var body: some View {
         ZStack{
-            Rectangle()
-                .frame(width: 150, height: 200)
-                .cornerRadius(30)
+            RoundedRectangle()
+                .frame(width: 350, height: 200, alignment: .center)
                 .foregroundColor(Color("lightGrey"))
+                .shadow(color: .gray, radius: 3, x: -2, y: 2)
             VStack{
                 HStack{
                     Image(potions.image)
@@ -33,7 +33,7 @@ struct CategoryItemView: View {
                     Text(potions.description)
                         .font(.system(size: 12))
                         .fontWeight(.regular)
-                        .frame(width: 120)
+                        .frame(width: 320)
                         .padding()
                         .foregroundColor(Color("text"))
             
