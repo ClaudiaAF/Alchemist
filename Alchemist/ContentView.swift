@@ -8,42 +8,37 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var potion: [PotionsModel] = PotionsData
+    
     @EnvironmentObject var dungeon: Dungeon
+    
     @State private var searchText = ""
     
     var body: some View {
         ZStack{
             Color("offBlack")
             
-        VStack(spacing: 0){
-            NavBarView()
-                .background(Color("offBlack"))
-                .padding(.horizontal, 15)
-                .padding(.bottom)
-                .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-            
-            Spacer()
-        }
-        
             if dungeon.showingPotion == false && dungeon.selectedPotion == nil {
                 
                 VStack(alignment: .leading){
                 HStack{
-                    Text("Alchemy Recipes")
-                        .fontWeight(.black)
-                        .font(.system(size: 30))
-                        .foregroundColor(Color("text"))
-                }.frame(height:60, alignment: .leading)
-                .padding(.leading, 36)
-                .padding(.top, 50)
-                
                     SearchBar(text: $searchText)
                         .padding()
+                    
+                    NavBarView()
+                        .background(Color("offBlack"))
+                        .padding()
+                }.frame(height:60, alignment: .leading)
+                .padding()
+                .padding(.top, 50)
+                
+//
                     
                     ScrollView(.vertical){
                         VStack(spacing: 10){
                                 ForEach(PotionsData.filter({ searchText.isEmpty ? true : $0.name.contains(searchText) })) { item in
+                                    
                                     CategoryItemView(potions:item)
                                         .onTapGesture {
                                             withAnimation(.easeOut){

@@ -14,7 +14,6 @@ struct NavBarView: View {
     
     var body: some View {
         HStack{     
-            Spacer()
             
             Button(action: {
                 isShowingSettings = true
