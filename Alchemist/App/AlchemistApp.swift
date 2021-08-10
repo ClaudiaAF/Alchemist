@@ -11,18 +11,18 @@ import SwiftUI
 struct AlchemistApp: App {
     
     @AppStorage("isOnboarding") var isOnboarding: Bool = true
-    @AppStorage("isDarkMode") var isDarkMode: Bool = false
+    @AppStorage("isDarkMode") var isDarkMode: Bool = true
     
     var body: some Scene {
         WindowGroup {
             if isOnboarding {
                 OnboardingView()
-                    .preferredColorScheme(isDarkMode ? .light : .dark)
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
                 
             } else {
                 ContentView()
                     .environmentObject(Dungeon())
-                    .preferredColorScheme(isDarkMode ? .light : .dark)
+                    .preferredColorScheme(isDarkMode ? .dark : .light)
             }
         }
     }

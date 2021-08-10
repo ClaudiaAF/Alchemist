@@ -75,6 +75,7 @@ struct SearchBar: View {
                     }
                 }, label: {
                     Image(systemName: "magnifyingglass")
+                        .accentColor(Color ("text"))
                 }) .padding(self.show ? 10 : 0)
             }
            

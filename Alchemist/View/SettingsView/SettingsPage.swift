@@ -10,7 +10,7 @@ import SwiftUI
 struct SettingsPage: View {
     
     @Environment(\.presentationMode) var presentationMode
-    @AppStorage("isDarkMode") var isDarkMode = false
+    @AppStorage("isDarkMode") var isDarkMode = true
     
     var body: some View {
             NavigationView{

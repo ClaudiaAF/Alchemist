@@ -15,7 +15,7 @@ struct CategoryItemView: View {
             RoundedRectangle()
                 .frame(width: 350, height: 200, alignment: .center)
                 .foregroundColor(Color("lightGrey"))
-                .shadow(color: .gray, radius: 3, x: -2, y: 2)
+                .shadow(color: .black, radius: 10, x: -2, y: 2)
             VStack{
                 HStack{
                     Image(potions.image)
@@ -46,5 +46,6 @@ struct CategoryItemView_Previews: PreviewProvider {
     static var previews: some View {
         CategoryItemView(potions: PotionsData[0])
             .previewLayout(.sizeThatFits)
+            .preferredColorScheme(.light)
     }
 }
