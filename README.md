@@ -17,12 +17,10 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+![GitHub language count](https://img.shields.io/github/languages/count/ClaudiaAF/Alchemist?colorB=eb1367)
+![GitHub repo size](https://img.shields.io/github/repo-size/ClaudiaAF/Alchemist?colorB=eb1367)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/ClaudiaAF/Alchemist?colorB=eb1367)
+![GitHub watchers](https://img.shields.io/github/watchers/ClaudiaAF/Alchemist?colorB=eb1367)
 
 
 
@@ -68,7 +66,23 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
+    <li><a href="#features-and-functions">Features and Functions</a></li>
+    <li>
+      <a href="#concept-process">Concept Process</a>
+      <ul>
+        <li><a href="#ideation">Ideation</a></li>
+        <li><a href="#wireframes">Wireframes</a></li>
+        <li><a href="#user-flow">User-Flow Diagrams</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#development-process">Development Process</a>
+      <ul>
+        <li><a href="#implementation">Implementation</a></li>
+        <li><a href="#peer-reviews">Peer Reviews</a></li>
+      </ul>
+    </li>
+    <li><a href="#video-demonstration">Video Demonstration</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -82,18 +96,19 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+![Group 59](https://user-images.githubusercontent.com/64257497/129109560-47898a8b-fec3-4501-be1f-7bec4a82705f.png)
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+
+The world of gaming as expanded over the years, so much so that games themselves have been widely recognised outside of just their own field, allowing for a more vast amount of options to further immerse the player in the game. Popular fantasy RPG video game The Elder Scrolls V: Skyrim grew largely with this notion, and influence has slowly started to spew over into the world of mobile apps.
+
+Alchemy finds itself within this description. Alchemy is a Swift native Skyrim-inspired app, with its primary use to merely be a recipe book of Alchemy recipes for potions and posions that can be created within the game. When free-roaming and exploring within the game, the player can easily access recipes through Alchemy in order to brew potions or posions while on the go, without having to worry about getting overencumbered by carrying extra recipe books in-game! 
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Swift]()
+* [SwiftUI]()
+* [XCode]()
 
 
 
@@ -104,33 +119,72 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Requires iOS 13 and Xcode 11
 
+  
 ### Installation
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+1. In Xcode go to
+  ```sh
+  File -> Swift Packages -> Add Package Dependency
+  ```
+2. and paste in the repo's url:
+`https://github.com/ClaudiaAF/Alchemist`
 
 
 
 <!-- USAGE EXAMPLES -->
-## Usage
+## Features & Functions
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Features
+* Onboarding views to aid the user in understanding the app
+* List view of craftable alchemy recipes 
+* Individual views for each recipe with image, description and needed ingredients
+* Light and dark mode 
+* Search bar
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+### Functions 
+* `TabView` utilised for the onboarding screens.
+* `ScrollView` and `LazyVGrid` used for the list of potions.
+* `@EnvironmentObject` used for individual page navigation.
+* `@State` utilised throughout project for dark/light mode, and search bar.
+* `preferredColorScheme` utilised in App.swift file for dark/light mode.
 
+## Concept Process
+### Ideation
+![Group 57](https://user-images.githubusercontent.com/64257497/129109670-31407d35-a023-4170-8568-3c3d587c7bd9.png)
+![Group 58](https://user-images.githubusercontent.com/64257497/129109693-6e37542d-5131-46f6-90f5-05d9e7e8ae11.png)
 
+### Planning
+![Group 63](https://user-images.githubusercontent.com/64257497/129109707-4ea88879-021b-4769-aea0-1273008a95d1.png)
+
+### Wireframes
+![Group 64](https://user-images.githubusercontent.com/64257497/129109781-49b55aa1-fffe-47c2-9c45-49047989af70.png)
+
+### User FLow
+![Group 62](https://user-images.githubusercontent.com/64257497/129109797-50f9d5af-b168-4843-be7c-59a8e01a0bd8.png)
+
+## Development Process
+### Implementation
+#### Challenges
+
+* Understanding Swift and SwiftUI logic
+* Styling hierarchy in SwiftUI
+* MVVM coding practice
+* Implementing the light/dark mode
+* Enabling the navigation for the individual view
+
+### Peer Reviews
+#### Feedback
+Peer feedback soon to come
+
+#### Future Changes
+Future changes soon to come
+
+## Mockups
+
+## Video Demonstration
+Click [Here]() to view the app demonstration
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -145,9 +199,9 @@ See the [open issues](https://github.com/github_username/repo_name/issues) for a
 Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
+2. Create your Feature Branch (`git checkout -b ClaudiaAF/Alchemist`)
+3. Commit your Changes (`git commit -m 'Add some Alchemist'`)
+4. Push to the Branch (`git push origin ClaudiaAF/Alchemist`)
 5. Open a Pull Request
 
 
@@ -162,20 +216,17 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
-
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+* **Claudia Ferreira** - 180181@virtualwindow.co.za
+* **Project Link** - https://github.com/ClaudiaAF/Alchemist.git
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
-
-
+* [Armand Pretorius](https://github.com/ArmandPretorius)
+* [SwiftUI Documentation](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+* [Hacking With Swift](https://www.hackingwithswift.com/quick-start/swiftui)
 
 
 
