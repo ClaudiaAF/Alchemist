@@ -31,6 +31,7 @@ struct NavBarView: View {
                 }
             .sheet(isPresented: $isShowingSettings){
                 SettingsPage()
+                    
                 
             }
         }

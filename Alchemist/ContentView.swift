@@ -35,10 +35,12 @@ struct ContentView: View {
                         .background(Color.clear)
                         .padding(.horizontal, 40)
                         .padding(.top, 40)
+                        .accessibilityIdentifier("settingsView")
                 
                     SearchBar(text: $searchText)
                         .padding(.horizontal, 40)
                         .padding(.top, 20)
+                        .accessibilityIdentifier("searchField")
                     
                     ScrollView(.vertical){
                         VStack(spacing: 10){
@@ -51,6 +53,7 @@ struct ContentView: View {
                                                 dungeon.showingPotion = true
                                             }
                                         }.padding()
+                                        .accessibilityIdentifier("detailView")
                                 }
                             }
                         }.padding()

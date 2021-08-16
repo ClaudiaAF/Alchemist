@@ -23,6 +23,8 @@
 		A3134A0426BDEB5300CA6768 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3134A0326BDEB5300CA6768 /* PotionsModel.swift */; };
 		A32285E026C6B2C000E1D59D /* ButtonOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */; };
 		A32285E226C6B66F00E1D59D /* SkipOnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */; };
+		A32285EC26CAD94C00E1D59D /* AlchemistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */; };
+		A32285FA26CADA7700E1D59D /* AlchemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285F926CADA7700E1D59D /* AlchemistUITests.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
@@ -32,6 +34,23 @@
 		A392FE9226ADFCA40090B544 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE9126ADFCA40090B544 /* Constants.swift */; };
 		A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A392FE9326AE00240090B544 /* CategoryItemView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32285EE26CAD94C00E1D59D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34EB99E26A58E3800242E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34EB9A526A58E3900242E65;
+			remoteInfo = Alchemist;
+		};
+		A32285FC26CADA7700E1D59D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34EB99E26A58E3800242E65 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34EB9A526A58E3900242E65;
+			remoteInfo = Alchemist;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A31349C126AEC96B00CA6768 /* OnboardingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCardView.swift; sourceTree = "<group>"; };
@@ -50,6 +69,12 @@
 		A3134A0326BDEB5300CA6768 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
 		A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOnboardingView.swift; sourceTree = "<group>"; };
 		A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipOnboardingButton.swift; sourceTree = "<group>"; };
+		A32285E926CAD94C00E1D59D /* AlchemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistTests.swift; sourceTree = "<group>"; };
+		A32285ED26CAD94C00E1D59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32285F726CADA7700E1D59D /* AlchemistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32285F926CADA7700E1D59D /* AlchemistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistUITests.swift; sourceTree = "<group>"; };
+		A32285FB26CADA7700E1D59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -63,6 +88,20 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A32285E626CAD94C00E1D59D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32285F426CADA7700E1D59D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A34EB9A326A58E3900242E65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -135,10 +174,30 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		A32285EA26CAD94C00E1D59D /* AlchemistTests */ = {
+			isa = PBXGroup;
+			children = (
+				A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */,
+				A32285ED26CAD94C00E1D59D /* Info.plist */,
+			);
+			path = AlchemistTests;
+			sourceTree = "<group>";
+		};
+		A32285F826CADA7700E1D59D /* AlchemistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A32285F926CADA7700E1D59D /* AlchemistUITests.swift */,
+				A32285FB26CADA7700E1D59D /* Info.plist */,
+			);
+			path = AlchemistUITests;
+			sourceTree = "<group>";
+		};
 		A34EB99D26A58E3800242E65 = {
 			isa = PBXGroup;
 			children = (
 				A34EB9A826A58E3900242E65 /* Alchemist */,
+				A32285EA26CAD94C00E1D59D /* AlchemistTests */,
+				A32285F826CADA7700E1D59D /* AlchemistUITests */,
 				A34EB9A726A58E3900242E65 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -147,6 +206,8 @@
 			isa = PBXGroup;
 			children = (
 				A34EB9A626A58E3900242E65 /* Alchemist.app */,
+				A32285E926CAD94C00E1D59D /* AlchemistTests.xctest */,
+				A32285F726CADA7700E1D59D /* AlchemistUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +281,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A32285E826CAD94C00E1D59D /* AlchemistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32285F226CAD94C00E1D59D /* Build configuration list for PBXNativeTarget "AlchemistTests" */;
+			buildPhases = (
+				A32285E526CAD94C00E1D59D /* Sources */,
+				A32285E626CAD94C00E1D59D /* Frameworks */,
+				A32285E726CAD94C00E1D59D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32285EF26CAD94C00E1D59D /* PBXTargetDependency */,
+			);
+			name = AlchemistTests;
+			productName = AlchemistTests;
+			productReference = A32285E926CAD94C00E1D59D /* AlchemistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A32285F626CADA7700E1D59D /* AlchemistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32285FE26CADA7700E1D59D /* Build configuration list for PBXNativeTarget "AlchemistUITests" */;
+			buildPhases = (
+				A32285F326CADA7700E1D59D /* Sources */,
+				A32285F426CADA7700E1D59D /* Frameworks */,
+				A32285F526CADA7700E1D59D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32285FD26CADA7700E1D59D /* PBXTargetDependency */,
+			);
+			name = AlchemistUITests;
+			productName = AlchemistUITests;
+			productReference = A32285F726CADA7700E1D59D /* AlchemistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		A34EB9A526A58E3900242E65 /* Alchemist */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A34EB9B526A58E3E00242E65 /* Build configuration list for PBXNativeTarget "Alchemist" */;
@@ -246,6 +343,14 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					A32285E826CAD94C00E1D59D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A34EB9A526A58E3900242E65;
+					};
+					A32285F626CADA7700E1D59D = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = A34EB9A526A58E3900242E65;
+					};
 					A34EB9A526A58E3900242E65 = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
@@ -265,11 +370,27 @@
 			projectRoot = "";
 			targets = (
 				A34EB9A526A58E3900242E65 /* Alchemist */,
+				A32285E826CAD94C00E1D59D /* AlchemistTests */,
+				A32285F626CADA7700E1D59D /* AlchemistUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A32285E726CAD94C00E1D59D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32285F526CADA7700E1D59D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A34EB9A426A58E3900242E65 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -282,6 +403,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A32285E526CAD94C00E1D59D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32285EC26CAD94C00E1D59D /* AlchemistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32285F326CADA7700E1D59D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32285FA26CADA7700E1D59D /* AlchemistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A34EB9A226A58E3900242E65 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,7 +450,94 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A32285EF26CAD94C00E1D59D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34EB9A526A58E3900242E65 /* Alchemist */;
+			targetProxy = A32285EE26CAD94C00E1D59D /* PBXContainerItemProxy */;
+		};
+		A32285FD26CADA7700E1D59D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34EB9A526A58E3900242E65 /* Alchemist */;
+			targetProxy = A32285FC26CADA7700E1D59D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		A32285F026CAD94C00E1D59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlchemistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudia.AlchemistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alchemist.app/Alchemist";
+			};
+			name = Debug;
+		};
+		A32285F126CAD94C00E1D59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlchemistTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudia.AlchemistTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Alchemist.app/Alchemist";
+			};
+			name = Release;
+		};
+		A32285FF26CADA7700E1D59D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlchemistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudia.AlchemistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemist;
+			};
+			name = Debug;
+		};
+		A322860026CADA7700E1D59D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlchemistUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.claudia.AlchemistUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Alchemist;
+			};
+			name = Release;
+		};
 		A34EB9B326A58E3E00242E65 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +699,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A32285F226CAD94C00E1D59D /* Build configuration list for PBXNativeTarget "AlchemistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32285F026CAD94C00E1D59D /* Debug */,
+				A32285F126CAD94C00E1D59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32285FE26CADA7700E1D59D /* Build configuration list for PBXNativeTarget "AlchemistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32285FF26CADA7700E1D59D /* Debug */,
+				A322860026CADA7700E1D59D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A34EB9A126A58E3800242E65 /* Build configuration list for PBXProject "Alchemist" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

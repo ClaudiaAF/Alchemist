@@ -28,6 +28,7 @@ struct CategoryItemView: View {
                         .fontWeight(.bold)
                         .font(.title2)
                         .foregroundColor(Color("text"))
+                        .accessibilityIdentifier("potionItem")
                 
                     Text(potions.description)
                         .font(.system(size: 12))

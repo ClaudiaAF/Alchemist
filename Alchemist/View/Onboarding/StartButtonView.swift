@@ -40,6 +40,7 @@ struct StartButtonView: View {
             .accentColor(Color.white)
             
         }).shadow(radius: 10)
+        
     }
 }
 
