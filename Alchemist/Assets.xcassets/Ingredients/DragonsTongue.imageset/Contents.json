@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "TESV_Dragons_Tongue.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "TESV_Dragons_Tongue-1.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "TESV_Dragons_Tongue-2.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
