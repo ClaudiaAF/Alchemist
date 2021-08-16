@@ -12,9 +12,7 @@ struct HeaderDetail: View {
     @EnvironmentObject var dungeon: Dungeon
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 6, content: {
-            Text("Health Potion")
-                .foregroundColor(.white)
+        VStack(alignment: .leading, spacing: 6, content: {            
             
             Text(dungeon.selectedPotion?.name ?? sampleProduct.name)
                 .font(.largeTitle)

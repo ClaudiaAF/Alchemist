@@ -24,7 +24,7 @@ struct TopSectionDetail: View {
                 Text(dungeon.selectedPotion?.points ?? sampleProduct.points)
                     .font(.largeTitle)
                     .fontWeight(.black)
-                    .foregroundColor(Color("text"))
+                    .foregroundColor(Color("lightGrey"))
                     .scaleEffect(1.35, anchor: .leading)
                     .padding(.leading, 60)
             })
