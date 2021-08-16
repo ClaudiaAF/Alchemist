@@ -1,13 +1,13 @@
 //
-//  OnboardingCardView.swift
+//  ButtonOnboardingView.swift
 //  Alchemist
 //
-//  Created by Claudia Ferreira on 04/05/1400 AP.
+//  Created by Claudia Ferreira on 22/05/1400 AP.
 //
 
 import SwiftUI
 
-struct OnboardingCardView: View {
+struct ButtonOnboardingView: View {
     var image: String
     var title: String
     var description: String
@@ -33,21 +33,17 @@ struct OnboardingCardView: View {
                     .padding()
                     .frame(maxWidth:350, alignment: .leading)
                     .multilineTextAlignment(.leading)
+                StartButtonView()
                 
             }
             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             
-            SkipOnboardingButton()
-                .padding(30)
-               .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topTrailing)
         }
     }
 }
 
-struct OnboardingCardView_Previews: PreviewProvider {
+struct ButtonOnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        OnboardingCardView(image: "Onboard1", title: "Welcome to Alchemist", description: "Your Go-To Skyrim Alchemy Library")
-            .preferredColorScheme(.dark)
-            
+        ButtonOnboardingView(image: "Onboard3", title: "Welcome to Alchemist", description: "Your Go-To Skyrim Alchemy Library")
     }
 }

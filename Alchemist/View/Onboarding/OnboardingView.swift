@@ -8,19 +8,25 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
     var body: some View {
         ZStack{
             Color("offBlack")
                 .ignoresSafeArea(.all)
-        TabView{
-            OnboardingCardView(image: "LogoTransp", title: "Welcome to Alchemist", description: "The Go-To Skyrim Alchemy Library App")
-            
-            OnboardingCardView(image: "LogoTransp", title: "Magic in Your Pocket", description: "Access alchemy recipes at the tap of a button")
-            
-            OnboardingCardView(image: "LogoTransp", title: "Get Makin'", description: "Let's get you started with some magical potion making!")
-        }
-        .tabViewStyle(PageTabViewStyle())
-        .padding()
+        ScrollView{
+            TabView{
+                OnboardingCardView(image: "Onboard1", title: "Magic in Your Pocket", description: "The Go-To Skyrim Alchemy Library App")
+                    .ignoresSafeArea(.all)
+                
+                OnboardingCardView(image: "Onboard2", title: "An Easy Find", description: "Access alchemy recipes at the tap of a button")
+                    .ignoresSafeArea(.all)
+                
+                ButtonOnboardingView(image: "Onboard3", title: "Potions Galore", description: "Let's get you started with some magical potion making!")
+                    .ignoresSafeArea(.all)
+            }
+            .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height)
+            .tabViewStyle(PageTabViewStyle())
+        }.edgesIgnoringSafeArea(.all)
         }
     }
 }
@@ -28,5 +34,6 @@ struct OnboardingView: View {
 struct OnboardingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
+            .preferredColorScheme(.dark)
     }
 }
