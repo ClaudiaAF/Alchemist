@@ -24,20 +24,11 @@ struct NavBarDetailView: View {
                     .font(.title)
                     .foregroundColor(Color("text"))
             })
-            Spacer()
-            Button(action: {
-                isShowingSettings = true
-                }) {
-                    Image(systemName: "gear")
-                        .font(.title)
-                        .foregroundColor(Color("text"))
-                }
-            .sheet(isPresented: $isShowingSettings){
-                SettingsPage()
+            Text("Recipes")
+                .foregroundColor(Color("text"))
             }
         }
     }
-}
 
 struct NavBarDetailView_Previews: PreviewProvider {
     static var previews: some View {

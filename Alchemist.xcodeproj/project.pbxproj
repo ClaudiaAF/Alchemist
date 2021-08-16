@@ -21,6 +21,8 @@
 		A31349F926BAA73F00CA6768 /* RoundedRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349F826BAA73F00CA6768 /* RoundedRectangle.swift */; };
 		A31349FC26BAB97C00CA6768 /* Dungeon.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31349FB26BAB97C00CA6768 /* Dungeon.swift */; };
 		A3134A0426BDEB5300CA6768 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3134A0326BDEB5300CA6768 /* PotionsModel.swift */; };
+		A32285E026C6B2C000E1D59D /* ButtonOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */; };
+		A32285E226C6B66F00E1D59D /* SkipOnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
 		A34EB9AE26A58E3E00242E65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34EB9AD26A58E3E00242E65 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		A31349F826BAA73F00CA6768 /* RoundedRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedRectangle.swift; sourceTree = "<group>"; };
 		A31349FB26BAB97C00CA6768 /* Dungeon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dungeon.swift; sourceTree = "<group>"; };
 		A3134A0326BDEB5300CA6768 /* PotionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PotionsModel.swift; sourceTree = "<group>"; };
+		A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOnboardingView.swift; sourceTree = "<group>"; };
+		A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipOnboardingButton.swift; sourceTree = "<group>"; };
 		A34EB9A626A58E3900242E65 /* Alchemist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alchemist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A34EB9A926A58E3900242E65 /* AlchemistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistApp.swift; sourceTree = "<group>"; };
 		A34EB9AB26A58E3900242E65 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -207,6 +211,8 @@
 				A31349C126AEC96B00CA6768 /* OnboardingCardView.swift */,
 				A31349C326AECD8200CA6768 /* StartButtonView.swift */,
 				A31349C526AEDBBD00CA6768 /* OnboardingView.swift */,
+				A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */,
+				A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -283,6 +289,7 @@
 				A31349C426AECD8200CA6768 /* StartButtonView.swift in Sources */,
 				A392FE9026ADF4A10090B544 /* LogoView.swift in Sources */,
 				A31349DF26B1643100CA6768 /* SearchBar.swift in Sources */,
+				A32285E026C6B2C000E1D59D /* ButtonOnboardingView.swift in Sources */,
 				A31349F326B9DB0900CA6768 /* NavBarDetailView.swift in Sources */,
 				A31349ED26B1E98E00CA6768 /* ItemView.swift in Sources */,
 				A392FE8E26ADEF3D0090B544 /* NavBarView.swift in Sources */,
@@ -298,6 +305,7 @@
 				A392FE9426AE00240090B544 /* CategoryItemView.swift in Sources */,
 				A31349F526BA9A9500CA6768 /* HeaderDetail.swift in Sources */,
 				A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */,
+				A32285E226C6B66F00E1D59D /* SkipOnboardingButton.swift in Sources */,
 				A31349FC26BAB97C00CA6768 /* Dungeon.swift in Sources */,
 				A392FE9226ADFCA40090B544 /* Constants.swift in Sources */,
 			);

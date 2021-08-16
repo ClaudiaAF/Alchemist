@@ -13,17 +13,25 @@ struct NavBarView: View {
     @State private var isShowingSettings = false
     
     var body: some View {
-        HStack{     
+        HStack{                
             
+            Text("Recipes")
+                .fontWeight(.black)
+                .font(.system(size: 36))
+                .foregroundColor(Color("text"))
+                .padding()
+            
+            Spacer()
+        
             Button(action: {
                 isShowingSettings = true
                 }) {
                     Image(systemName: "gear")
-                        .font(.title)
-                        .foregroundColor(Color("text"))
+                        .foregroundColor(Color("text")).font(.title)
                 }
             .sheet(isPresented: $isShowingSettings){
                 SettingsPage()
+                
             }
         }
     }

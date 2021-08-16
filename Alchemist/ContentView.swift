@@ -11,29 +11,34 @@ struct ContentView: View {
     
     var potion: [PotionsModel] = PotionsData
     
+    
     @EnvironmentObject var dungeon: Dungeon
     
     @State private var searchText = ""
     
     var body: some View {
         ZStack{
+            
             Color("offBlack")
+            Image("gradientBG")
+                .resizable()
+                .ignoresSafeArea(.all)
+                .offset(y:65)
+                
+            
             
             if dungeon.showingPotion == false && dungeon.selectedPotion == nil {
                 
                 VStack(alignment: .leading){
-                HStack{
-                    SearchBar(text: $searchText)
-                        .padding()
                     
                     NavBarView()
-                        .background(Color("offBlack"))
-                        .padding()
-                }.frame(height:60, alignment: .leading)
-                .padding()
-                .padding(.top, 50)
+                        .background(Color.clear)
+                        .padding(.horizontal, 40)
+                        .padding(.top, 40)
                 
-//
+                    SearchBar(text: $searchText)
+                        .padding(.horizontal, 40)
+                        .padding(.top, 20)
                     
                     ScrollView(.vertical){
                         VStack(spacing: 10){
@@ -55,6 +60,7 @@ struct ContentView: View {
                 ItemView()
             }
     } .ignoresSafeArea(.all)
+    
 }
 }
 
