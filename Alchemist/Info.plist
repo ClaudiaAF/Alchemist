@@ -29,10 +29,10 @@
 	<true/>
 	<key>UILaunchScreen</key>
 	<dict>
+		<key>UIColorName</key>
+		<string>text</string>
 		<key>UIImageName</key>
 		<string>AlchLogo</string>
-		<key>UIColorName</key>
-		<string>offBlack</string>
 	</dict>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>

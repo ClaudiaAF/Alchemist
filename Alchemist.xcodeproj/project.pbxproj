@@ -23,7 +23,6 @@
 		A3134A0426BDEB5300CA6768 /* PotionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3134A0326BDEB5300CA6768 /* PotionsModel.swift */; };
 		A32285E026C6B2C000E1D59D /* ButtonOnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */; };
 		A32285E226C6B66F00E1D59D /* SkipOnboardingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */; };
-		A32285EC26CAD94C00E1D59D /* AlchemistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */; };
 		A32285FA26CADA7700E1D59D /* AlchemistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A32285F926CADA7700E1D59D /* AlchemistUITests.swift */; };
 		A34EB9AA26A58E3900242E65 /* AlchemistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9A926A58E3900242E65 /* AlchemistApp.swift */; };
 		A34EB9AC26A58E3900242E65 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34EB9AB26A58E3900242E65 /* ContentView.swift */; };
@@ -70,8 +69,6 @@
 		A32285DF26C6B2C000E1D59D /* ButtonOnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonOnboardingView.swift; sourceTree = "<group>"; };
 		A32285E126C6B66F00E1D59D /* SkipOnboardingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipOnboardingButton.swift; sourceTree = "<group>"; };
 		A32285E926CAD94C00E1D59D /* AlchemistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistTests.swift; sourceTree = "<group>"; };
-		A32285ED26CAD94C00E1D59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A32285F726CADA7700E1D59D /* AlchemistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlchemistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32285F926CADA7700E1D59D /* AlchemistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlchemistUITests.swift; sourceTree = "<group>"; };
 		A32285FB26CADA7700E1D59D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -174,15 +171,6 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		A32285EA26CAD94C00E1D59D /* AlchemistTests */ = {
-			isa = PBXGroup;
-			children = (
-				A32285EB26CAD94C00E1D59D /* AlchemistTests.swift */,
-				A32285ED26CAD94C00E1D59D /* Info.plist */,
-			);
-			path = AlchemistTests;
-			sourceTree = "<group>";
-		};
 		A32285F826CADA7700E1D59D /* AlchemistUITests */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,7 +184,6 @@
 			isa = PBXGroup;
 			children = (
 				A34EB9A826A58E3900242E65 /* Alchemist */,
-				A32285EA26CAD94C00E1D59D /* AlchemistTests */,
 				A32285F826CADA7700E1D59D /* AlchemistUITests */,
 				A34EB9A726A58E3900242E65 /* Products */,
 			);
@@ -407,7 +394,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A32285EC26CAD94C00E1D59D /* AlchemistTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

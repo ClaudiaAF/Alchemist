@@ -74,6 +74,7 @@ struct SettingsPage: View {
                             .tag(false)
                         Text("Dark")
                             .tag(true)
+                            .accessibilityIdentifier("darkMode")
                     }
                     .pickerStyle(SegmentedPickerStyle()).padding()
                     .animation(.spring())

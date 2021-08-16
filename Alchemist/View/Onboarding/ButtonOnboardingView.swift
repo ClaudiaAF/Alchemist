@@ -34,6 +34,7 @@ struct ButtonOnboardingView: View {
                     .frame(maxWidth:350, alignment: .leading)
                     .multilineTextAlignment(.leading)
                 StartButtonView()
+                    .padding(.top)
                 
             }
             .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -44,6 +45,6 @@ struct ButtonOnboardingView: View {
 
 struct ButtonOnboardingView_Previews: PreviewProvider {
     static var previews: some View {
-        ButtonOnboardingView(image: "Onboard3", title: "Welcome to Alchemist", description: "Your Go-To Skyrim Alchemy Library")
+        ButtonOnboardingView(image: "Onboard2", title: "Welcome to Alchemist", description: "Your Go-To Skyrim Alchemy Library")
     }
 }

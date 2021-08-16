@@ -42,6 +42,8 @@ class AlchemistUITests: XCTestCase {
     func testDetailedView() throws {
         app.staticTexts["Restore Health"].tap()
         
+        //only the restore health potion uses blue mountain flower as one of its ingredients
         XCTAssert(app.staticTexts["Blue Mountain Flower"].exists)
     }
+    
 }
