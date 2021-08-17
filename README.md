@@ -71,17 +71,20 @@
       <a href="#concept-process">Concept Process</a>
       <ul>
         <li><a href="#ideation">Ideation</a></li>
+        <li><a href="#planning">Ideation</a></li>
         <li><a href="#wireframes">Wireframes</a></li>
-        <li><a href="#user-flow">User-Flow Diagrams</a></li>
       </ul>
     </li>
     <li>
       <a href="#development-process">Development Process</a>
       <ul>
-        <li><a href="#implementation">Implementation</a></li>
-        <li><a href="#peer-reviews">Peer Reviews</a></li>
+        <li><a href="#user-flow-diagram">User-Flow Diagrams</a></li>
+        <li><a href="#implementation-of-features">Implementation</a></li>
+        <li><a href="#design-architecture">Design Architecture</a></li>
+        <li><a href="#unit-tests">Unit Tests</a></li>
       </ul>
     </li>
+    <li><a href="#mockup">Mockup</a></li>
     <li><a href="#video-demonstration">Video Demonstration</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -134,14 +137,22 @@ Requires iOS 13 and Xcode 11
 
 
 <!-- USAGE EXAMPLES -->
-## Features & Functions
+## Features and Functions
 
 ### Features
+
 * Onboarding views to aid the user in understanding the app
-* List view of craftable alchemy recipes 
+<img width="1920" alt="Slide 16_9 - 22" src="https://user-images.githubusercontent.com/64257497/129711199-7c701e70-3edd-4bdf-ab74-0416b85a7b9c.png">
+
+* List view of craftable alchemy recipes, and a seach option 
+<img width="1920" alt="Slide 16_9 - 24" src="https://user-images.githubusercontent.com/64257497/129711287-69bb80da-89d2-4315-b0e1-a7c50252c6c2.png">
+
 * Individual views for each recipe with image, description and needed ingredients
-* Light and dark mode 
-* Search bar
+<img width="1920" alt="Slide 16_9 - 23" src="https://user-images.githubusercontent.com/64257497/129711352-c2eeff12-d1fc-47a9-ac8f-783a6dbf5a97.png">
+
+* Settings Page with Light and Dark Mode option
+<img width="1920" alt="Slide 16_9 - 25" src="https://user-images.githubusercontent.com/64257497/129711419-4605925c-83f8-4b4a-8e6a-24caf892ad1d.png">
+
 
 ### Functions 
 * `TabView` utilised for the onboarding screens.
@@ -161,30 +172,44 @@ Requires iOS 13 and Xcode 11
 ### Wireframes
 ![Group 64](https://user-images.githubusercontent.com/64257497/129109781-49b55aa1-fffe-47c2-9c45-49047989af70.png)
 
-### User FLow
+## Development Process
+### User-Flow Diagram
 ![Group 62](https://user-images.githubusercontent.com/64257497/129109797-50f9d5af-b168-4843-be7c-59a8e01a0bd8.png)
 
-## Development Process
-### Implementation
-#### Challenges
+### Implementation of Features
 
-* Understanding Swift and SwiftUI logic
-* Styling hierarchy in SwiftUI
-* MVVM coding practice
-* Implementing the light/dark mode
-* Enabling the navigation for the individual view
+#### Splash Page
+The splash page was created using the SwiftUI `LaunchScreen` option in the `info.plst` file which automatically sets a splash page for you.
 
-### Peer Reviews
-#### Feedback
-Peer feedback soon to come
+#### Onboarding
+Through use of a `TabView` with the `PageTabViewStyle`, three onboarding screens were created with the data being parsed through dynamically with  local variables. Upon entering the app for the second time the onboarding will not show again.
 
-#### Future Changes
-Future changes soon to come
+#### List View
+Using a basic scroll view the potions are displayed dynamically by accessing their data through the potions model.
 
-## Mockups
+#### Detailed View
+An `@EnvironmentObject` is used to identify the selected potion in order to be able to access the potion data across the entire application in order to dynamically display it.
+
+#### Search List
+`@State` and a basic search function of identifying whether there is text in the textfield, and if so this text is comapred to the info in the potions model and found that way as well.
+
+#### Light and Dark Mode
+`@AppStorage` is made use of to determine whether dark or light mode is activated, with light mode being tagged as false and dark mode as true in my case.
+
+#### Design Architecture
+For my design architecture I made use of the Model View Controller architecture for my project as this was the architecture I was more familiar with at the time. The ideal method would definitely be to refactor the project to an MVVM structure, and I aim to do so.
+
+#### Unit Tests
+![Screenshot 2021-08-16 214326](https://user-images.githubusercontent.com/64257497/129713077-ba0cae9d-d07b-4c70-9b9b-c9fc8a38dc6d.png)
+
+I conducted three successful basic UI Unit tests, the first testing the appearance of the settings page sheet, the second testing whether the search function works, and the third testing whether the detailed view displays the correct information.
+
+## Mockup
+
+<img width="1920" alt="Group 106" src="https://user-images.githubusercontent.com/64257497/129717253-a267fc92-6d53-404e-b241-99ddc192ef76.png">
 
 ## Video Demonstration
-Click [Here]() to view the app demonstration
+Click [Here](https://drive.google.com/file/d/1RR4ymoBMz5auRIVXpS5_CCIAOfxBDl7f/view?usp=sharing) to view the app demonstration
 
 <!-- ROADMAP -->
 ## Roadmap
@@ -204,22 +229,20 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin ClaudiaAF/Alchemist`)
 5. Open a Pull Request
 
+## Author
 
+Claudia Ferreira
 
 <!-- LICENSE -->
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
-
-
 <!-- CONTACT -->
 ## Contact
 
 * **Claudia Ferreira** - 180181@virtualwindow.co.za
 * **Project Link** - https://github.com/ClaudiaAF/Alchemist.git
-
-
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
