@@ -8,9 +8,8 @@
 import SwiftUI
 
 struct SkipOnboardingButton: View {
-    
     @AppStorage("isOnboarding") var isOnboarding: Bool?
-    
+
     var body: some View {
         Button(action: {
             print("Exit Onboarding")

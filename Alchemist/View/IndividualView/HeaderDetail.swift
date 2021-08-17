@@ -8,18 +8,15 @@
 import SwiftUI
 
 struct HeaderDetail: View {
-    
     @EnvironmentObject var dungeon: Dungeon
-    
+
     var body: some View {
-        VStack(alignment: .leading, spacing: 6, content: {            
-            
+        VStack(alignment: .leading, spacing: 6, content: {
             Text(dungeon.selectedPotion?.name ?? sampleProduct.name)
                 .font(.largeTitle)
                 .fontWeight(.black)
                 .foregroundColor(Color("text"))
         })
-            
     }
 }
 

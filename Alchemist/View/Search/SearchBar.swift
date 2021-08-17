@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct SearchBar: View {
-    @Binding var text : String
+    // binding for textfield
+    @Binding var text: String
+
+    // bool to check for text in textfield
     @State private var isEditing = false
-    
+
     var body: some View {
-        HStack{
+        HStack {
+            // maginfying glass
             Image(systemName: "magnifyingglass")
                 .foregroundColor(Color("text"))
                 .padding(.leading, 8)
+
+            // textfield and search funcion
             TextField("Search ...", text: $text)
                 .padding(7)
                 .padding(.horizontal, 25)
@@ -23,7 +29,7 @@ struct SearchBar: View {
                 .background(Color("greyish"))
                 .cornerRadius(30)
                 .overlay(
-                    HStack{
+                    HStack {
                         if isEditing {
                             Button(action: {
                                 self.text = ""
@@ -36,7 +42,7 @@ struct SearchBar: View {
                 .onTapGesture {
                     self.isEditing = true
                 }
-            
+
             if isEditing {
                 Button(action: {
                     self.isEditing = false

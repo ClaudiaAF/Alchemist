@@ -8,19 +8,21 @@
 import SwiftUI
 
 struct TopSectionDetail: View {
-    
+    // object for detailed view navigation
     @EnvironmentObject var dungeon: Dungeon
+
+    // @state bool for animations
     @State private var isAnimating: Bool = false
-    
+
     var body: some View {
-        HStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 6, content: {
-            //hp points
+        HStack(alignment: /*@START_MENU_TOKEN@*/ .center/*@END_MENU_TOKEN@*/, spacing: 6, content: {
+            // effects
             VStack(alignment: .leading, spacing: 6, content: {
                 Text("Effect")
                     .fontWeight(.semibold)
                     .foregroundColor(Color("text"))
                     .padding(.leading, 40)
-                
+
                 Text(dungeon.selectedPotion?.points ?? sampleProduct.points)
                     .font(.title3)
                     .fontWeight(.bold)
@@ -29,21 +31,20 @@ struct TopSectionDetail: View {
                     .padding(.leading, 40)
                     .padding(.top)
             })
-            .offset(y: isAnimating ? -5: -750)
+                .offset(y: isAnimating ? -5 : -750)
             Spacer()
-            
-            //photo
+
+            // photo
             Image(dungeon.selectedPotion?.image ?? sampleProduct.image)
                 .resizable()
                 .offset(y: isAnimating ? 0 : -35)
                 .frame(height: 240, alignment: .center)
         })
-        .onAppear(perform: {
-            withAnimation(.easeOut(duration: 0.75)){
-                isAnimating.toggle()
-            }
-        })
-        
+            .onAppear(perform: {
+                withAnimation(.easeOut(duration: 0.75)) {
+                    isAnimating.toggle()
+                }
+            })
     }
 }
 

@@ -8,38 +8,42 @@
 import SwiftUI
 
 struct ItemView: View {
-    
+    // potions data
     var potion: [PotionsModel] = PotionsData
+
+    // object for detailed view navigation
     @EnvironmentObject var dungeon: Dungeon
-    
+
+    // variables for gradient animation
     @State var start = UnitPoint(x: 0, y: -2)
     @State var end = UnitPoint(x: 4, y: 0)
-    
+
+    // timer for gradient animation
     let timer = Timer.publish(every: 1, on: .main, in: .default).autoconnect()
+
+    // colors for gradient animation
     let colors = [Color("hotPink"), Color("deepBlue"), Color("turquoise"), Color("yellow"), Color("purpleBlue")]
-    
-    private var threeColumnGrid = [GridItem(.flexible()), GridItem(.flexible()), GridItem(.flexible())]
-    
+
     var body: some View {
         VStack(alignment: .leading, spacing: 5, content: {
-            //navbar
-            
+            // navbar
+
+            // top bar
             NavBarDetailView()
                 .padding(.horizontal)
                 .padding(.top, UIApplication.shared.windows.first?.safeAreaInsets.top)
-            //header
+            // header
             HeaderDetail()
                 .padding(.horizontal)
-            
-            //detail top section
+
+            // detail top section
             TopSectionDetail()
                 .padding()
                 .zIndex(1)
-            
-            
-            VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
-                //description
-            ScrollView(.vertical, showsIndicators: false, content: {
+
+            VStack(alignment: /*@START_MENU_TOKEN@*/ .center/*@END_MENU_TOKEN@*/, spacing: 0, content: {
+                // description
+                ScrollView(.vertical, showsIndicators: false, content: {
                     Text(dungeon.selectedPotion?.longDescription ?? sampleProduct.longDescription)
                         .font(.system(size: 18, design: .rounded))
                         .foregroundColor(Color("lightGrey"))
@@ -47,8 +51,9 @@ struct ItemView: View {
                         .padding(.horizontal, 30)
                         .padding(.top, 40)
                 })
-                
-                HStack{
+
+                HStack {
+                    // ingredients title
                     Text("Ingredients")
                         .fontWeight(.black)
                         .foregroundColor(Color("text"))
@@ -56,105 +61,93 @@ struct ItemView: View {
                         .padding()
                         .multilineTextAlignment(.leading)
                 }.frame(width: 350, height: 50, alignment: .leading)
-                
-                    ScrollView(.horizontal, showsIndicators: false){
-                        
-                    HStack{
-                        ZStack{
+
+                // ingredients horizontal scroller
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack {
+                        ZStack {
                             Rectangle()
                                 .frame(width: 320, height: 100, alignment: .center)
                                 .cornerRadius(30)
                                 .shadow(radius: 12)
                                 .overlay(LinearGradient(gradient: Gradient(colors: colors), startPoint: start, endPoint: end)
-                                            .cornerRadius(30)
-                                            .animation(Animation.easeInOut(duration: 6).repeatForever())
-                                            .onReceive(timer, perform: { _ in
-                                                
-                                                self.start = UnitPoint(x: 4, y: 0)
-                                                self.end = UnitPoint(x: 0, y: 2)
-                                                self.start = UnitPoint(x: -4, y: 20)
-                                                
-                                            })
+                                    .cornerRadius(30)
+                                    .animation(Animation.easeInOut(duration: 6).repeatForever())
+                                    .onReceive(timer, perform: { _ in
+
+                                        self.start = UnitPoint(x: 4, y: 0)
+                                        self.end = UnitPoint(x: 0, y: 2)
+                                        self.start = UnitPoint(x: -4, y: 20)
+
+                                    })
                                 )
-                            HStack{
-                                VStack(alignment: .leading){
-                                        
-                                        Text(dungeon.selectedPotion?.ingredient1 ?? sampleProduct.ingredient1)
-                                            .padding(.trailing, 1)
-                                            .padding(.vertical, 3)
-                                            .lineLimit(6)
-                                            .multilineTextAlignment(.leading)
-                                            .font(.system(size:15))
-                                            .foregroundColor(Color.white)
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(dungeon.selectedPotion?.ingredient1 ?? sampleProduct.ingredient1)
+                                        .padding(.trailing, 1)
+                                        .padding(.vertical, 3)
+                                        .lineLimit(6)
+                                        .multilineTextAlignment(.leading)
+                                        .font(.system(size: 15))
+                                        .foregroundColor(Color.white)
                                 }.padding(.trailing, 40)
-                                .padding(.leading,28)
-                                
-                                    Image(dungeon.selectedPotion?.ingredient1IMG ?? sampleProduct.ingredient1IMG)
-                                        .resizable()
-                                        .frame(width: 86, height: 106, alignment: .trailing)
+                                    .padding(.leading, 28)
+
+                                Image(dungeon.selectedPotion?.ingredient1IMG ?? sampleProduct.ingredient1IMG)
+                                    .resizable()
+                                    .frame(width: 86, height: 106, alignment: .trailing)
                             }
-                            
+
                         }.padding()
-                        
-                        ZStack{
+
+                        ZStack {
                             Rectangle()
                                 .frame(width: 320, height: 100, alignment: .center)
                                 .cornerRadius(30)
                                 .shadow(radius: 12)
                                 .overlay(LinearGradient(gradient: Gradient(colors: colors), startPoint: start, endPoint: end)
-                                            .cornerRadius(30)
-                                            .animation(Animation.easeInOut(duration: 6).repeatForever())
-                                            .onReceive(timer, perform: { _ in
-                                                
-                                                self.start = UnitPoint(x: 4, y: 0)
-                                                self.end = UnitPoint(x: 0, y: 2)
-                                                self.start = UnitPoint(x: -4, y: 20)
-                                                
-                                            })
+                                    .cornerRadius(30)
+                                    .animation(Animation.easeInOut(duration: 6).repeatForever())
+                                    .onReceive(timer, perform: { _ in
+
+                                        self.start = UnitPoint(x: 4, y: 0)
+                                        self.end = UnitPoint(x: 0, y: 2)
+                                        self.start = UnitPoint(x: -4, y: 20)
+
+                                    })
                                 )
-                            
-                                HStack{
-                                    VStack(alignment: .leading){
-                                            
-                                            
-                                            Text(dungeon.selectedPotion?.ingredient2 ?? sampleProduct.ingredient2)
-                                                .padding(.trailing, 1)
-                                                .padding(.vertical, 3)
-                                                .lineLimit(6)
-                                                .multilineTextAlignment(.leading)
-                                                .font(.system(size:15))
-                                                .foregroundColor(Color.white)
-                                    }.padding(.trailing, 40)
-                                    .padding(.leading,28)
-                                    
-                                        Image(dungeon.selectedPotion?.ingredient2IMG ?? sampleProduct.ingredient2IMG)
-                                            .resizable()
-                                            .frame(width: 86, height: 106, alignment: .trailing)
-                                }
-                            
+
+                            HStack {
+                                VStack(alignment: .leading) {
+                                    Text(dungeon.selectedPotion?.ingredient2 ?? sampleProduct.ingredient2)
+                                        .padding(.trailing, 1)
+                                        .padding(.vertical, 3)
+                                        .lineLimit(6)
+                                        .multilineTextAlignment(.leading)
+                                        .font(.system(size: 15))
+                                        .foregroundColor(Color.white)
+                                }.padding(.trailing, 40)
+                                    .padding(.leading, 28)
+
+                                Image(dungeon.selectedPotion?.ingredient2IMG ?? sampleProduct.ingredient2IMG)
+                                    .resizable()
+                                    .frame(width: 86, height: 106, alignment: .trailing)
                             }
+                        }
                     }.padding()
-                    .padding(.bottom)
+                        .padding(.bottom)
                 }
             })
-//            .frame(width: 380)
-//            .padding()
-//            .background(
-//                Color("greyish")
-//                    .clipShape(RoundedRectangle())
-//                    .padding(.top)
-//
-//            )
-          
+            //ingredients horizontal scroller end
+
         })
-        .background(
-            Image("Bubbles")
-                .resizable()
-        )
-        .zIndex(0)
-        .ignoresSafeArea(.all)
-        
-        }
+            .background(
+                Image("Bubbles")
+                    .resizable()
+            )
+            .zIndex(0)
+            .ignoresSafeArea(.all)
+    }
 }
 
 struct ItemView_Previews: PreviewProvider {

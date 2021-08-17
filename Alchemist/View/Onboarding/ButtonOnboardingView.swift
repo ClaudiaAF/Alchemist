@@ -11,14 +11,16 @@ struct ButtonOnboardingView: View {
     var image: String
     var title: String
     var description: String
-    
+
     var body: some View {
-        ZStack{
+        ZStack {
+            // background image
             Image(image)
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
-                
-            VStack{
+
+            VStack {
+                // title
                 Text(title)
                     .font(.largeTitle)
                     .fontWeight(.black)
@@ -26,19 +28,20 @@ struct ButtonOnboardingView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 15)
                     .frame(width: 350, height: 530, alignment: .topLeading)
-                
+
+                // description
                 Text(description)
                     .font(.body)
                     .foregroundColor(Color("text"))
                     .padding()
-                    .frame(maxWidth:350, alignment: .leading)
+                    .frame(maxWidth: 350, alignment: .leading)
                     .multilineTextAlignment(.leading)
+
+                // exit onboarding button
                 StartButtonView()
                     .padding(.top)
-                
             }
-            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            
+            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/ .infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/ .infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/ .center/*@END_MENU_TOKEN@*/)
         }
     }
 }

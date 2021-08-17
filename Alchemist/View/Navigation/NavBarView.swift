@@ -8,31 +8,27 @@
 import SwiftUI
 
 struct NavBarView: View {
-    
-    @State private var isAnimated: Bool = false
+    // @state for settings button
     @State private var isShowingSettings = false
-    
+
     var body: some View {
-        HStack{                
-            
+        HStack {
             Text("Recipes")
                 .fontWeight(.black)
                 .font(.system(size: 36))
                 .foregroundColor(Color("text"))
                 .padding()
-            
+
             Spacer()
-        
+
             Button(action: {
                 isShowingSettings = true
-                }) {
-                    Image(systemName: "gear")
-                        .foregroundColor(Color("text")).font(.title)
-                }
-            .sheet(isPresented: $isShowingSettings){
+            }) {
+                Image(systemName: "gear")
+                    .foregroundColor(Color("text")).font(.title)
+            }
+            .sheet(isPresented: $isShowingSettings) {
                 SettingsPage()
-                    
-                
             }
         }
     }

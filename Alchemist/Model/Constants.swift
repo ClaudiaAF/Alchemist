@@ -5,12 +5,11 @@
 //  Created by Claudia Ferreira on 03/05/1400 AP.
 //
 
-import Foundation
 import CoreGraphics
+import Foundation
 import SwiftUI
 
-//layout
-
+// layout
 let columnSpacing: CGFloat = 10
 let rowSpacing: CGFloat = 10
 var gridLayout: [GridItem] {

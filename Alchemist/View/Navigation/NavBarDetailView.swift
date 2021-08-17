@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct NavBarDetailView: View {
-    
+    // object for detailed view navigation
     @EnvironmentObject var dungeon: Dungeon
-    @State private var isShowingSettings = false
-    
+
     var body: some View {
-        HStack{
-            Button(action:{
-                withAnimation(.easeIn){
+        HStack {
+            Button(action: {
+                withAnimation(.easeIn) {
                     dungeon.selectedPotion = nil
                     dungeon.showingPotion = false
                 }
@@ -26,9 +25,9 @@ struct NavBarDetailView: View {
             })
             Text("Recipes")
                 .foregroundColor(Color("text"))
-            }
         }
     }
+}
 
 struct NavBarDetailView_Previews: PreviewProvider {
     static var previews: some View {

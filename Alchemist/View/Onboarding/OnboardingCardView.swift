@@ -11,14 +11,16 @@ struct OnboardingCardView: View {
     var image: String
     var title: String
     var description: String
-    
+
     var body: some View {
-        ZStack{
+        ZStack {
+            // backgroundImage
             Image(image)
                 .resizable()
                 .edgesIgnoringSafeArea(.all)
-                
-            VStack{
+
+            // Titile
+            VStack {
                 Text(title)
                     .font(.largeTitle)
                     .fontWeight(.black)
@@ -26,21 +28,22 @@ struct OnboardingCardView: View {
                     .multilineTextAlignment(.leading)
                     .padding(.horizontal, 15)
                     .frame(width: 350, height: 530, alignment: .topLeading)
-                
+
+                // description
                 Text(description)
                     .font(.body)
                     .foregroundColor(Color("text"))
                     .padding()
-                    .frame(maxWidth:350, alignment: .leading)
+                    .frame(maxWidth: 350, alignment: .leading)
                     .multilineTextAlignment(.leading)
-                
             }
-            .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-            
+            .frame(minWidth: 0, maxWidth: .infinity, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: 100, maxHeight: .infinity, alignment: .center)
+
+            // skip top-right button
             SkipOnboardingButton()
                 .padding(.trailing, 30)
                 .padding(.top, 50)
-               .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealWidth: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, idealHeight: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .topTrailing)
+                .frame(minWidth: 0, idealWidth: 100, maxWidth: .infinity, minHeight: 0, idealHeight: 100, maxHeight: .infinity, alignment: .topTrailing)
         }
     }
 }
@@ -49,6 +52,5 @@ struct OnboardingCardView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingCardView(image: "Onboard1", title: "Welcome to Alchemist", description: "Your Go-To Skyrim Alchemy Library")
             .preferredColorScheme(.dark)
-            
     }
 }

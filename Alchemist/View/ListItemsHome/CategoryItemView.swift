@@ -9,35 +9,36 @@ import SwiftUI
 
 struct CategoryItemView: View {
     var potions: PotionsModel
-        
+
     var body: some View {
-        ZStack{
+        ZStack {
+            // background rectangle
             RoundedRectangle()
                 .frame(width: 370, height: 170, alignment: .center)
                 .foregroundColor(Color("greyish"))
                 .shadow(color: Color.black.opacity(0.3), radius: 10, x: -2, y: 2)
-            HStack{
-                
-                    Image(potions.image)
-                        .renderingMode(.original)
-                        .resizable()
-                        .frame(width: 200, height: 200, alignment: .top)
-                VStack(alignment:.leading){
-                
+            HStack {
+                // potion image
+                Image(potions.image)
+                    .renderingMode(.original)
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .top)
+                VStack(alignment: .leading) {
+                    // potion name
                     Text(potions.name)
                         .fontWeight(.bold)
                         .font(.title2)
                         .foregroundColor(Color("text"))
                         .accessibilityIdentifier("potionItem")
-                
+
+                    // potion description
                     Text(potions.description)
                         .font(.system(size: 12))
                         .fontWeight(.regular)
                         .frame(width: 180)
                         .padding(.vertical)
                         .foregroundColor(Color("text"))
-                }.offset(x:-40)
-            
+                }.offset(x: -40)
             }
         }
     }
